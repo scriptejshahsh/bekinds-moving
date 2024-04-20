@@ -1,0 +1,59 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "BeKind Hub", HidePremium = false, IntroText = "BeKind Hub", SaveConfig = true, ConfigFolder = "BeKindConfig"}
+
+local Arsenal = Window:MakeTab({
+    Name = "Arsenal",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Mm2 = Window:MakeTab({
+    Name = "Mm2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Bladeball = Window:MakeTab({
+    Name = "Bladeball",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Dahood = Window:MakeTab({
+    Name = "Dahood",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+Dahood:AddButton({
+    Name = "SwagMode",
+    Callback = function()
+          loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+      end
+})
+
+Mm2:AddButton({
+    Name = "Mm2 Scripts Pc/Mobile",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+      end
+})
+
+Arsenal:AddButton({
+    Name = "Arsenal Script Pc/Mobile",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoArsenal"))()
+      end
+})
+
+Bladeball:AddButton({
+    Name = "Blade ball script",
+    Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+      end    
+
+})
+
+
+OrionLib:Init()
